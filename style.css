@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans;
+}
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+html{
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 180px top -150px, left 175px bottom -300px;
+    background-size: cover, cover;
+    height: 100vh;
+}
+
+.container{
+    max-width: 310px;
+    margin: 100px 32px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+.container img:nth-of-type(2){
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: -50px;
+    
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 0.5px solid var(--Dark-gray);
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.age{
+    font-weight: 300;
+    color: var(--Dark-grayish-blue);
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.name-age{
+    margin-top: 20px;
+}
+
+.city{
+    color: var(--Dark-grayish-blue);
+    margin-top: 10px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.details p{
+    color: var(--Dark-grayish-blue);
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+@media(min-width:376px){
+    html{
+        background-color: var(--Dark-cyan);
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left -175px top -300px, right -175px bottom -300px;
+        background-size: contain, contain;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        margin-top: 200px;
+    }
+}
